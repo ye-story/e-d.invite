@@ -11,13 +11,22 @@ const id = urlParams.get('id');
 
 const baseImgPath = './img/guests/';
 
-if (+id && !isNaN(+id) && (+id <= 52) && (+id > 0)) { 
-  // img1.src = baseImgPath + `1_${id}.jpg`;
-  img2.src = baseImgPath + `2_${id}.jpg`;
+if (+id && !isNaN(+id) && (+id <= 4)) { 
+  img1.src = baseImgPath + `ty/1_${id}.jpg`;
+  img2.src = baseImgPath + `ty/2.jpg`;
   // img3.src = baseImgPath + '3.jpg';
   // img4.src = baseImgPath + '4.jpg';
+} else if (+id && !isNaN(+id) && (+id > 4) && (+id <=8)) {
+  img1.src = baseImgPath + `vy/1_${id}.jpg`;
+  img2.src = baseImgPath + `vy/2.jpg`;
+}
+
+else if (+id && !isNaN(+id) && (+id > 8) && (+id <=14)) {
+  img1.src = baseImgPath + `wa/1_${id}.jpg`;
+  img2.src = baseImgPath + `wa/2.jpg`;
 }
 else {
+  img1.src = `./img/1.jpg`;
   img2.src = `./img/2.jpg`;
 }
 
