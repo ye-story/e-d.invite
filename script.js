@@ -21,7 +21,7 @@ if (+id && !isNaN(+id) && (+id <= 4)) {
   img2.src = baseImgPath + `vy/2.jpg`;
 }
 
-else if (+id && !isNaN(+id) && (+id > 8) && (+id <=14)) {
+else if (+id && !isNaN(+id) && (+id > 8) && (+id <=15)) {
   img1.src = baseImgPath + `wa/1_${id}.jpg`;
   img2.src = baseImgPath + `wa/2.jpg`;
 }
